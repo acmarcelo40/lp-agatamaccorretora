@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/agata-mac-design-system-19cc91aa-4a80-42c0-8311-22ff60271037/tokens/colors.css">
+<link rel="stylesheet" href="_ds/agata-mac-design-system-19cc91aa-4a80-42c0-8311-22ff60271037/tokens/typography.css">
+<link rel="stylesheet" href="_ds/agata-mac-design-system-19cc91aa-4a80-42c0-8311-22ff60271037/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/agata-mac-design-system-19cc91aa-4a80-42c0-8311-22ff60271037/tokens/effects.css">
+<link rel="stylesheet" href="_ds/agata-mac-design-system-19cc91aa-4a80-42c0-8311-22ff60271037/styles.css">
+<script src="_ds/agata-mac-design-system-19cc91aa-4a80-42c0-8311-22ff60271037/_ds_bundle.js"></script>
+<style>
+body{margin:0}
+a{color:var(--color-cyan-600,#2AA8E5)}
+a:hover{color:var(--color-cyan-700,#1c8bc4)}
+</style>
+</helmet>
+
+<div style="font-family:var(--font-body);background:#fff">
+
+<x-import component-from-global-scope="AgataMacDesignSystem_19cc91.Navbar" active="Início" logo-src="assets/logo.png" hint-size="100%,72px"></x-import>
+
+<section data-screen-label="Hero" style="background:var(--gradient-institutional);color:#fff;padding:96px 32px;display:flex;gap:48px;align-items:center;justify-content:center">
+  <div style="max-width:600px">
+    <div style="font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--color-cyan-300);margin-bottom:16px">SEGUROS · SAÚDE · BENEFÍCIOS CORPORATIVOS</div>
+    <h1 style="font-family:var(--font-display);font-size:52px;line-height:60px;margin:0;color:#fff">Inteligência para proteger o que importa na sua empresa.</h1>
+    <p style="font-size:18px;line-height:30px;color:var(--color-brand-100);margin-top:20px">Analisamos o cenário da sua empresa e indicamos as melhores alternativas em saúde, seguros e benefícios — com clareza técnica antes da venda.</p>
+    <div style="display:flex;gap:16px;margin-top:32px;flex-wrap:wrap">
+      <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.Button" variant="action" hint-size="auto,48px">Solicitar análise</x-import>
+      <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.Button" variant="secondary-inverse" hint-size="auto,48px">Falar com especialista</x-import>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Produtos" style="padding:80px 32px;max-width:1120px;margin:0 auto">
+  <div style="text-align:center;margin-bottom:40px">
+    <h2 style="font-family:var(--font-display);font-size:36px;color:var(--color-brand-900);margin:0 0 8px">Soluções para sua empresa</h2>
+    <p style="color:var(--color-neutral-500);margin:0">Proteção e benefícios pensados para o porte e o momento do seu negócio.</p>
+  </div>
+  <div style="display:flex;gap:24px;flex-wrap:wrap;justify-content:center">
+    <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.ProductCard" title="Saúde Empresarial" description="Soluções sob medida para sua equipe." dc-props="{{ productSaude }}" highlighted="{{ true }}" hint-size="340px,320px"></x-import>
+    <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.ProductCard" title="Seguro Empresarial" description="Proteja o patrimônio da sua empresa." dc-props="{{ productSeguro }}" hint-size="340px,320px"></x-import>
+    <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.ProductCard" title="Cyber" description="Monitoramento e resposta a incidentes." dc-props="{{ productCyber }}" hint-size="340px,320px"></x-import>
+  </div>
+</section>
+
+<section data-screen-label="Indicadores" style="background:var(--color-neutral-50);padding:80px 32px">
+  <div style="display:flex;gap:24px;justify-content:center;flex-wrap:wrap">
+    <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.IndicatorCard" value="18%" label="Economia potencial identificada" detail="na revisão da carteira de benefícios" hint-size="280px,160px"></x-import>
+    <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.IndicatorCard" value="7" label="Soluções de proteção" detail="saúde, vida, auto, residencial, empresarial, patrimonial, consórcio" hint-size="280px,160px"></x-import>
+    <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.IndicatorCard" value="Alphaville" label="Atuação regional" detail="atendimento consultivo próximo, em Barueri — SP" hint-size="280px,160px"></x-import>
+  </div>
+</section>
+
+<section data-screen-label="Como funciona" style="padding:80px 32px;max-width:900px;margin:0 auto">
+  <h2 style="font-family:var(--font-display);font-size:36px;color:var(--color-brand-900);margin:0 0 8px;text-align:center">Como funciona</h2>
+  <p style="text-align:center;color:var(--color-neutral-500);margin:0 0 40px">Um processo consultivo, do diagnóstico à contratação.</p>
+  <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.Timeline" dc-props="{{ timelineProps }}" hint-size="100%,160px"></x-import>
+</section>
+
+<section data-screen-label="Comparativo" style="padding:80px 32px;max-width:1000px;margin:0 auto">
+  <h2 style="font-family:var(--font-display);font-size:36px;color:var(--color-brand-900);margin-bottom:8px;text-align:center">Comparativo técnico</h2>
+  <p style="text-align:center;color:var(--color-neutral-500);margin-bottom:32px">Nunca destacamos apenas o preço — o design favorece a análise de adequação.</p>
+  <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.ComparisonTable" dc-props="{{ comparisonProps }}" hint-size="100%,300px"></x-import>
+  <p style="font-size:12px;color:var(--color-neutral-500);margin-top:12px">*Valores aproximados por vida. Consulte condições comerciais.</p>
+</section>
+
+<section data-screen-label="Sobre" style="background:var(--color-neutral-50);padding:80px 32px">
+  <div style="max-width:960px;margin:0 auto;display:flex;gap:48px;align-items:center;flex-wrap:wrap">
+    <div style="flex:1;min-width:280px">
+      <div style="font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--color-cyan-600);margin-bottom:12px">QUEM SOMOS</div>
+      <h2 style="font-family:var(--font-display);font-size:32px;color:var(--color-brand-900);margin:0 0 16px">Corretora consultiva, com análise técnica antes da venda</h2>
+      <p style="font-size:16px;line-height:26px;color:var(--color-neutral-600);margin:0">A Agata Mac Corretora atua em Alphaville, Barueri — SP, ajudando empresas a escolher as melhores alternativas em saúde, seguros e benefícios corporativos. Analisamos o cenário de cada CNPJ antes de recomendar qualquer produto.</p>
+    </div>
+    <div style="flex:1;min-width:260px;display:flex;gap:16px;flex-wrap:wrap;justify-content:center">
+      <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.Avatar" initials="AM" size="{{ 64 }}" hint-size="64px,64px"></x-import>
+      <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.Avatar" initials="RC" size="{{ 64 }}" hint-size="64px,64px"></x-import>
+      <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.Avatar" initials="JS" size="{{ 64 }}" hint-size="64px,64px"></x-import>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="FAQ" style="padding:80px 32px;max-width:760px;margin:0 auto">
+  <h2 style="font-family:var(--font-display);font-size:36px;color:var(--color-brand-900);margin-bottom:24px;text-align:center">Perguntas frequentes</h2>
+  <div style="display:flex;justify-content:center">
+    <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.FAQAccordion" dc-props="{{ faqProps }}" hint-size="100%,280px"></x-import>
+  </div>
+</section>
+
+<section data-screen-label="CTA final" style="background:var(--gradient-institutional);color:#fff;padding:72px 32px;text-align:center">
+  <h2 style="font-family:var(--font-display);font-size:32px;margin:0 0 12px;color:#fff">Pronto para revisar a proteção da sua empresa?</h2>
+  <p style="font-size:16px;color:var(--color-brand-100);margin:0 0 28px">Fale agora com um especialista e receba uma análise sem compromisso.</p>
+  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+    <a href="https://wa.me/5511942880299" target="_blank" rel="noopener" style="text-decoration:none">
+      <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.Button" variant="whatsapp" hint-size="auto,48px">Falar no WhatsApp</x-import>
+    </a>
+    <a href="tel:+551143026044" style="text-decoration:none">
+      <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.Button" variant="secondary-inverse" hint-size="auto,48px">(11) 4302-6044</x-import>
+    </a>
+  </div>
+</section>
+
+<footer style="background:var(--color-brand-900);color:#fff;padding:48px 32px;display:flex;gap:32px;flex-wrap:wrap;justify-content:space-between;font-size:14px">
+  <img src="assets/logo.png" style="height:28px;filter:brightness(0) invert(1)" alt="Agata Mac">
+  <div>(11) 4302-6044 · (11) 94288-0299</div>
+  <div>contato@agatamacsaude.com.br · www.agatamacsaude.com.br</div>
+  <div>Alameda Grajaú, 129, Alphaville, Barueri — SP</div>
+</footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      productSaude: { bullets: ['Melhores operadoras', 'Gestão de benefícios', 'Redução de custos'] },
+      productSeguro: { bullets: ['Incêndio', 'Danos elétricos', 'Responsabilidade civil'] },
+      productCyber: { bullets: ['Escudo com circuito', 'Análise preditiva', 'Suporte especializado'] },
+      timelineProps: { steps: ['Diagnóstico do CNPJ', 'Análise de mercado', 'Proposta comparativa', 'Contratação', 'Acompanhamento'], current: 1 },
+      comparisonProps: {
+        columns: ['Operadora', 'Plano', 'Acomodação', 'Abrangência', 'Copart.', 'Preço'],
+        rows: [
+          { cells: ['Bradesco Saúde', 'Efetivo', 'Enfermaria', 'Nacional', 'Sim', 'R$ 580,00'] },
+          { cells: ['SulAmérica', 'Clássico', 'Apartamento', 'Nacional', 'Sim', 'R$ 620,00'] },
+          { cells: ['Amil', 'S750', 'Apartamento', 'Nacional', 'Não', 'R$ 690,00'], recommended: true },
+          { cells: ['Omint', 'PME', 'Enfermaria', 'Nacional', 'Sim', 'R$ 540,00'] },
+        ],
+      },
+      faqProps: {
+        items: [
+          { q: 'Quantas pessoas são necessárias para contratar um plano empresarial?', a: 'A quantidade mínima depende da operadora, da modalidade e do vínculo com a empresa. A Agata Mac analisa o CNPJ, a composição do grupo e as regras comerciais disponíveis antes de indicar uma alternativa.' },
+          { q: 'Qual o prazo de carência?', a: 'Varia por operadora e produto — apresentamos o comparativo completo antes da contratação.' },
+          { q: 'É possível incluir dependentes?', a: 'Sim, conforme as regras do plano e da operadora escolhida.' },
+          { q: 'A Agata Mac atende empresas fora de Alphaville/Barueri?', a: 'Sim. A base fica em Alphaville, mas o atendimento consultivo é feito remotamente para empresas de outras regiões.' },
+        ],
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>
