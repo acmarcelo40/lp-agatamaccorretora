@@ -1,0 +1,11 @@
+:root{
+--color-brand-950:#041c28;--color-brand-900:#082b3c;--color-brand-800:#0d3b52;--color-brand-700:#124e6a;--color-brand-600:#176486;--color-brand-500:#1e7da6;--color-brand-400:#4d9bbc;--color-brand-300:#7db8d0;--color-brand-200:#aed5e4;--color-brand-100:#d8edf4;--color-brand-50:#eff8fb;
+--color-cyan-700:#147faf;--color-cyan-600:#1d95cf;--color-cyan-500:#2aa8e5;--color-cyan-400:#55bbea;--color-cyan-300:#87d0f1;--color-cyan-200:#b8e3f7;--color-cyan-100:#dcf2fc;--color-cyan-50:#f0fafe;
+--color-gold-700:#a87620;--color-gold-600:#c9952f;--color-gold-500:#e5b64c;--color-gold-400:#efc86e;--color-gold-300:#f5d995;--color-gold-200:#fae9be;--color-gold-100:#fdf5df;--color-gold-50:#fffbf2;
+--color-success:#35a66f;--color-warning:#f28a3a;--color-danger:#d84a4a;--color-ai:#7567d9;
+--color-neutral-950:#101820;--color-neutral-900:#18232d;--color-neutral-800:#263540;--color-neutral-700:#3c4a54;--color-neutral-600:#596873;--color-neutral-500:#78858e;--color-neutral-400:#9da7ae;--color-neutral-300:#c1c8cd;--color-neutral-200:#dce1e4;--color-neutral-100:#eef1f3;--color-neutral-50:#f7f9fa;--color-white:#ffffff;
+--surface-page:#ffffff;--surface-alt:#f7f9fa;--surface-info:#eff8fb;--surface-premium:#082b3c;--surface-commercial:#fffbf2;
+--text-heading:var(--color-neutral-900);--text-body:var(--color-neutral-700);--text-muted:var(--color-neutral-500);--text-on-brand:#ffffff;
+--border-default:var(--color-neutral-200);--border-active:var(--color-cyan-500);--border-error:var(--color-danger);
+--link-color:var(--color-brand-700);--link-hover:var(--color-cyan-600);
+}

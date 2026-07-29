@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+:root{
+--font-display:'Sora',sans-serif;--font-body:'Inter',sans-serif;
+--display-xl-size:64px;--display-xl-line:72px;--display-xl-weight:700;
+--display-l-size:52px;--display-l-line:60px;--display-l-weight:700;
+--h1-size:44px;--h1-line:52px;--h1-weight:700;
+--h2-size:36px;--h2-line:44px;--h2-weight:700;
+--h3-size:28px;--h3-line:36px;--h3-weight:600;
+--h4-size:24px;--h4-line:32px;--h4-weight:600;
+--h5-size:20px;--h5-line:28px;--h5-weight:600;
+--body-lg-size:18px;--body-lg-line:30px;--body-lg-weight:400;
+--body-size:16px;--body-line:26px;--body-weight:400;
+--body-sm-size:14px;--body-sm-line:22px;--body-sm-weight:400;
+--caption-size:12px;--caption-line:18px;--caption-weight:500;
+--button-size:16px;--button-line:20px;--button-weight:600;
+--overline-size:12px;--overline-line:16px;--overline-weight:700;
+}
