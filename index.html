@@ -25,11 +25,11 @@ a:hover{color:var(--color-cyan-700,#1c8bc4)}
 
 <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.Navbar" active="Início" logo-src="assets/logo.png" hint-size="100%,72px"></x-import>
 
-<section data-screen-label="Hero" style="background:var(--gradient-institutional);color:#fff;padding:96px 32px;display:flex;gap:48px;align-items:center;justify-content:center">
+<section data-screen-label="Hero" style="background:var(--gradient-institutional);color:#fff;padding:clamp(56px,12vw,96px) clamp(20px,5vw,32px);display:flex;gap:48px;align-items:center;justify-content:center">
   <div style="max-width:600px">
-    <div style="font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--color-cyan-300);margin-bottom:16px">SEGUROS · SAÚDE · BENEFÍCIOS CORPORATIVOS</div>
-    <h1 style="font-family:var(--font-display);font-size:52px;line-height:60px;margin:0;color:#fff">Inteligência para proteger o que importa na sua empresa.</h1>
-    <p style="font-size:18px;line-height:30px;color:var(--color-brand-100);margin-top:20px">Analisamos o cenário da sua empresa e indicamos as melhores alternativas em saúde, seguros e benefícios — com clareza técnica antes da venda.</p>
+    <div style="font-size:clamp(11px,2.8vw,12px);font-weight:700;letter-spacing:.08em;color:var(--color-cyan-300);margin-bottom:16px">SEGUROS · SAÚDE · BENEFÍCIOS CORPORATIVOS</div>
+    <h1 style="font-family:var(--font-display);font-size:clamp(32px,8vw,52px);line-height:1.12;margin:0;color:#fff">Inteligência para proteger o que importa na sua empresa.</h1>
+    <p style="font-size:clamp(15px,4vw,18px);line-height:1.6;color:var(--color-brand-100);margin-top:20px">Analisamos o cenário da sua empresa e indicamos as melhores alternativas em saúde, seguros e benefícios — com clareza técnica antes da venda.</p>
     <div style="display:flex;gap:16px;margin-top:32px;flex-wrap:wrap">
       <a href="https://wa.me/5511933691002?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20seguros%20e%20benef%C3%ADcios%20para%20minha%20empresa." target="_blank" rel="noopener" style="text-decoration:none">
         <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.Button" variant="action" hint-size="auto,48px">Solicitar análise</x-import>
@@ -41,10 +41,10 @@ a:hover{color:var(--color-cyan-700,#1c8bc4)}
   </div>
 </section>
 
-<section data-screen-label="Produtos" style="padding:80px 32px;max-width:1120px;margin:0 auto">
+<section data-screen-label="Produtos" style="padding:clamp(48px,10vw,80px) clamp(20px,5vw,32px);max-width:1120px;margin:0 auto">
   <div style="text-align:center;margin-bottom:40px">
-    <h2 style="font-family:var(--font-display);font-size:36px;color:var(--color-brand-900);margin:0 0 8px">Soluções para sua empresa</h2>
-    <p style="color:var(--color-neutral-500);margin:0">Proteção e benefícios pensados para o porte e o momento do seu negócio.</p>
+    <h2 style="font-family:var(--font-display);font-size:clamp(26px,6vw,36px);color:var(--color-brand-900);margin:0 0 8px">Soluções para sua empresa</h2>
+    <p style="font-size:clamp(14px,3.5vw,16px);color:var(--color-neutral-500);margin:0">Proteção e benefícios pensados para o porte e o momento do seu negócio.</p>
   </div>
   <div style="display:flex;gap:24px;flex-wrap:wrap;justify-content:center">
     <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.ProductCard" title="Saúde Empresarial" description="Soluções sob medida para sua equipe." dc-props="{{ productSaude }}" highlighted="{{ true }}" hint-size="340px,320px"></x-import>
@@ -53,7 +53,7 @@ a:hover{color:var(--color-cyan-700,#1c8bc4)}
   </div>
 </section>
 
-<section data-screen-label="Indicadores" style="background:var(--color-neutral-50);padding:80px 32px">
+<section data-screen-label="Indicadores" style="background:var(--color-neutral-50);padding:clamp(48px,10vw,80px) clamp(20px,5vw,32px)">
   <div style="display:flex;gap:24px;justify-content:center;flex-wrap:wrap">
     <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.IndicatorCard" value="18%" label="Economia potencial identificada" detail="na revisão da carteira de benefícios" hint-size="280px,160px"></x-import>
     <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.IndicatorCard" value="7" label="Soluções de proteção" detail="saúde, vida, auto, residencial, empresarial, patrimonial, consórcio" hint-size="280px,160px"></x-import>
@@ -61,25 +61,27 @@ a:hover{color:var(--color-cyan-700,#1c8bc4)}
   </div>
 </section>
 
-<section data-screen-label="Como funciona" style="padding:80px 32px;max-width:900px;margin:0 auto">
-  <h2 style="font-family:var(--font-display);font-size:36px;color:var(--color-brand-900);margin:0 0 8px;text-align:center">Como funciona</h2>
-  <p style="text-align:center;color:var(--color-neutral-500);margin:0 0 40px">Um processo consultivo, do diagnóstico à contratação.</p>
+<section data-screen-label="Como funciona" style="padding:clamp(48px,10vw,80px) clamp(20px,5vw,32px);max-width:900px;margin:0 auto">
+  <h2 style="font-family:var(--font-display);font-size:clamp(26px,6vw,36px);color:var(--color-brand-900);margin:0 0 8px;text-align:center">Como funciona</h2>
+  <p style="font-size:clamp(14px,3.5vw,16px);text-align:center;color:var(--color-neutral-500);margin:0 0 40px">Um processo consultivo, do diagnóstico à contratação.</p>
   <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.Timeline" dc-props="{{ timelineProps }}" hint-size="100%,160px"></x-import>
 </section>
 
-<section data-screen-label="Comparativo" style="padding:80px 32px;max-width:1000px;margin:0 auto">
-  <h2 style="font-family:var(--font-display);font-size:36px;color:var(--color-brand-900);margin-bottom:8px;text-align:center">Comparativo técnico</h2>
-  <p style="text-align:center;color:var(--color-neutral-500);margin-bottom:32px">Nunca destacamos apenas o preço — o design favorece a análise de adequação.</p>
-  <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.ComparisonTable" dc-props="{{ comparisonProps }}" hint-size="100%,300px"></x-import>
-  <p style="font-size:12px;color:var(--color-neutral-500);margin-top:12px">*Valores aproximados por vida. Consulte condições comerciais.</p>
+<section data-screen-label="Comparativo" style="padding:clamp(48px,10vw,80px) clamp(20px,5vw,32px);max-width:1000px;margin:0 auto">
+  <h2 style="font-family:var(--font-display);font-size:clamp(26px,6vw,36px);color:var(--color-brand-900);margin-bottom:8px;text-align:center">Comparativo técnico</h2>
+  <p style="font-size:clamp(14px,3.5vw,16px);text-align:center;color:var(--color-neutral-500);margin-bottom:32px">Nunca destacamos apenas o preço — o design favorece a análise de adequação.</p>
+  <div style="overflow-x:auto">
+    <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.ComparisonTable" dc-props="{{ comparisonProps }}" hint-size="100%,300px"></x-import>
+  </div>
+  <p style="font-size:clamp(11px,3vw,12px);color:var(--color-neutral-500);margin-top:12px">*Valores aproximados por vida. Consulte condições comerciais.</p>
 </section>
 
-<section data-screen-label="Sobre" style="background:var(--color-neutral-50);padding:80px 32px">
+<section data-screen-label="Sobre" style="background:var(--color-neutral-50);padding:clamp(48px,10vw,80px) clamp(20px,5vw,32px)">
   <div style="max-width:960px;margin:0 auto;display:flex;gap:48px;align-items:center;flex-wrap:wrap">
     <div style="flex:1;min-width:280px">
-      <div style="font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--color-cyan-600);margin-bottom:12px">QUEM SOMOS</div>
-      <h2 style="font-family:var(--font-display);font-size:32px;color:var(--color-brand-900);margin:0 0 16px">Corretora consultiva, com análise técnica antes da venda</h2>
-      <p style="font-size:16px;line-height:26px;color:var(--color-neutral-600);margin:0">A Agata Mac Corretora atua em Alphaville, Barueri — SP, ajudando empresas a escolher as melhores alternativas em saúde, seguros e benefícios corporativos. Analisamos o cenário de cada CNPJ antes de recomendar qualquer produto.</p>
+      <div style="font-size:clamp(11px,2.8vw,12px);font-weight:700;letter-spacing:.08em;color:var(--color-cyan-600);margin-bottom:12px">QUEM SOMOS</div>
+      <h2 style="font-family:var(--font-display);font-size:clamp(24px,6vw,32px);color:var(--color-brand-900);margin:0 0 16px">Corretora consultiva, com análise técnica antes da venda</h2>
+      <p style="font-size:clamp(14px,3.5vw,16px);line-height:1.6;color:var(--color-neutral-600);margin:0">A Agata Mac Corretora atua em Alphaville, Barueri — SP, ajudando empresas a escolher as melhores alternativas em saúde, seguros e benefícios corporativos. Analisamos o cenário de cada CNPJ antes de recomendar qualquer produto.</p>
     </div>
     <div style="flex:1;min-width:260px;display:flex;gap:16px;flex-wrap:wrap;justify-content:center">
       <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.Avatar" initials="AM" size="{{ 64 }}" hint-size="64px,64px"></x-import>
@@ -89,16 +91,16 @@ a:hover{color:var(--color-cyan-700,#1c8bc4)}
   </div>
 </section>
 
-<section data-screen-label="FAQ" style="padding:80px 32px;max-width:760px;margin:0 auto">
-  <h2 style="font-family:var(--font-display);font-size:36px;color:var(--color-brand-900);margin-bottom:24px;text-align:center">Perguntas frequentes</h2>
+<section data-screen-label="FAQ" style="padding:clamp(48px,10vw,80px) clamp(20px,5vw,32px);max-width:760px;margin:0 auto">
+  <h2 style="font-family:var(--font-display);font-size:clamp(26px,6vw,36px);color:var(--color-brand-900);margin-bottom:24px;text-align:center">Perguntas frequentes</h2>
   <div style="display:flex;justify-content:center">
     <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.FAQAccordion" dc-props="{{ faqProps }}" hint-size="100%,280px"></x-import>
   </div>
 </section>
 
-<section data-screen-label="CTA final" style="background:var(--gradient-institutional);color:#fff;padding:72px 32px;text-align:center">
-  <h2 style="font-family:var(--font-display);font-size:32px;margin:0 0 12px;color:#fff">Pronto para revisar a proteção da sua empresa?</h2>
-  <p style="font-size:16px;color:var(--color-brand-100);margin:0 0 28px">Fale agora com um especialista e receba uma análise sem compromisso.</p>
+<section data-screen-label="CTA final" style="background:var(--gradient-institutional);color:#fff;padding:clamp(48px,10vw,72px) clamp(20px,5vw,32px);text-align:center">
+  <h2 style="font-family:var(--font-display);font-size:clamp(24px,6vw,32px);margin:0 0 12px;color:#fff">Pronto para revisar a proteção da sua empresa?</h2>
+  <p style="font-size:clamp(14px,3.5vw,16px);color:var(--color-brand-100);margin:0 0 28px">Fale agora com um especialista e receba uma análise sem compromisso.</p>
   <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
     <a href="https://wa.me/5511933691002" target="_blank" rel="noopener" style="text-decoration:none">
       <x-import component-from-global-scope="AgataMacDesignSystem_19cc91.Button" variant="whatsapp" hint-size="auto,48px">Falar no WhatsApp</x-import>
@@ -109,7 +111,7 @@ a:hover{color:var(--color-cyan-700,#1c8bc4)}
   </div>
 </section>
 
-<footer style="background:var(--color-brand-900);color:#fff;padding:48px 32px;display:flex;gap:32px;flex-wrap:wrap;justify-content:space-between;font-size:14px">
+<footer style="background:var(--color-brand-900);color:#fff;padding:clamp(32px,8vw,48px) clamp(20px,5vw,32px);display:flex;gap:24px;flex-wrap:wrap;justify-content:space-between;font-size:clamp(12px,3vw,14px)">
   <img src="assets/logo.png" style="height:28px;filter:brightness(0) invert(1)" alt="Agata Mac">
   <div>(11) 4302-6044 · (11) 94288-0299</div>
   <div>contato@agatamacsaude.com.br · www.agatamacsaude.com.br</div>
