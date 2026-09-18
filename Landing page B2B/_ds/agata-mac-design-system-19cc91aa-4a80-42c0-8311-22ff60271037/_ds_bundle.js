@@ -584,7 +584,18 @@ function Navbar({
   logoSrc = 'assets/logo.png'
 }) {
   const items = ['Início', 'Soluções', 'Para empresas', 'Para você', 'Conteúdos', 'Sobre'];
-  return /*#__PURE__*/React.createElement("div", {
+  const [menuOpen, setMenuOpen] = React.useState(false);
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("style", null, `
+    .ds-navbar-links{display:flex;gap:24px;font-size:14px;font-weight:500;align-items:center}
+    .ds-navbar-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px;line-height:0}
+    @media (max-width:860px){
+      .ds-navbar-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:4px;background:#fff;padding:16px 32px 20px;border-bottom:1px solid var(--color-neutral-100);box-shadow:0 8px 16px rgba(0,0,0,.08);z-index:20}
+      .ds-navbar-links.is-open{display:flex}
+      .ds-navbar-links span{padding:8px 0;width:100%}
+      .ds-navbar-cta{display:none}
+      .ds-navbar-toggle{display:flex;align-items:center;justify-content:center}
+    }
+  `), /*#__PURE__*/React.createElement("div", {
     style: {
       fontFamily: 'var(--font-body)',
       display: 'flex',
@@ -592,7 +603,8 @@ function Navbar({
       justifyContent: 'space-between',
       padding: '16px 32px',
       background: '#fff',
-      borderBottom: '1px solid var(--color-neutral-100)'
+      borderBottom: '1px solid var(--color-neutral-100)',
+      position: 'relative'
     }
   }, /*#__PURE__*/React.createElement("img", {
     src: logoSrc,
@@ -600,20 +612,17 @@ function Navbar({
       height: 28
     }
   }), /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: 'flex',
-      gap: 24,
-      fontSize: 14,
-      fontWeight: 500
-    }
+    className: 'ds-navbar-links' + (menuOpen ? ' is-open' : '')
   }, items.map(it => /*#__PURE__*/React.createElement("span", {
     key: it,
+    onClick: () => setMenuOpen(false),
     style: {
       color: it === active ? 'var(--color-brand-900)' : 'var(--color-neutral-600)',
       borderBottom: it === active ? '2px solid var(--color-cyan-500)' : 'none',
       paddingBottom: 4
     }
   }, it))), /*#__PURE__*/React.createElement("button", {
+    className: 'ds-navbar-cta',
     style: {
       background: 'var(--color-brand-900)',
       color: '#fff',
@@ -623,7 +632,26 @@ function Navbar({
       fontWeight: 600,
       fontSize: 14
     }
-  }, "Falar com especialista"));
+  }, "Falar com especialista"), /*#__PURE__*/React.createElement("button", {
+    className: 'ds-navbar-toggle',
+    "aria-label": menuOpen ? 'Fechar menu' : 'Abrir menu',
+    onClick: () => setMenuOpen(!menuOpen)
+  }, /*#__PURE__*/React.createElement("svg", {
+    width: 26,
+    height: 26,
+    viewBox: "0 0 24 24",
+    fill: "none"
+  }, menuOpen ? /*#__PURE__*/React.createElement("path", {
+    d: "M6 6L18 18M18 6L6 18",
+    stroke: "var(--color-brand-900)",
+    strokeWidth: 2,
+    strokeLinecap: "round"
+  }) : /*#__PURE__*/React.createElement("path", {
+    d: "M4 6H20M4 12H20M4 18H20",
+    stroke: "var(--color-brand-900)",
+    strokeWidth: 2,
+    strokeLinecap: "round"
+  })))));
 }
 function Avatar({
   initials,
